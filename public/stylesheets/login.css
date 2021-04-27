@@ -1,0 +1,115 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to right, rgba(140, 66, 77, 8), #79626b);
+}
+
+form {
+    margin-top: 50px;
+    width: 30%;
+    height: 70%;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px;
+    margin-left: 1.5rem;
+    color: #000000;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    font-stretch: expanded;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: 3.5rem;
+    text-align: center;
+    font-style: Arial;
+    font-size: 8rem;
+    letter-spacing: 1.5rem;
+    text-transform: uppercase;
+    color: #0956BF;
+    text-shadow: -4px 4px #0956BF,
+        -8px 8px #D72600,
+        -12px 12px #D72600,
+        -16px 16px #379711,
+        -20px 20px #379711,
+        -24px 24px #ECD407,
+        -28px 28px #ECD407       
+        
+}
+
+.sr-only {
+    width: 65%;
+    text-align: left;
+    margin-top: -5%;
+}
+
+#inputEmail,
+#inputPassword {
+    position: relative;
+    width: 65%;
+    padding: 14px 10px;
+    margin: -100px 0px;
+    display: inline-flex;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    margin-top: -32%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button[type=login] {
+    margin:0 auto;
+    display:block;
+    height: 65%;
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #ccc;
+    background: #409443;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: unset;
+    width:40%;
+    margin-left:25%;
+    margin-right:25%;
+}
+
+.signup:hover {
+    opacity: 0.8;
+}
+
+button[type=signup] {
+    width:40%;
+    display:inline-block;
+    margin: auto;
+    text-align: bottom;
+    height: 65%;
+    font-size: 18px;
+    color: #ffffff;
+    border: 2px solid #ccc;
+    background: #c68a12;
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: unset;
+    text-decoration: none;
+}
