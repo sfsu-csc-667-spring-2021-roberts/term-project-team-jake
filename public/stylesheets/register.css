@@ -1,16 +1,16 @@
 body {
-    padding: 50px;
+    padding: 40px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     margin: 0;
     background-image: linear-gradient(to right, rgba(140, 66, 77, 8), #79626b);
 }
 
 form {
-    margin-top: 50px;
+    margin-top: 10rem;
     width: 30%;
     height: 70%;
-    display: grid;
-    justify-items: center;
+    display:grid;
+    justify-content: center;
     text-align: center;
     align-items: center;
     background-color: white;
@@ -18,24 +18,29 @@ form {
     box-shadow: 0px 0px 7px 2px black;
     margin-left: auto;
     margin-right: auto;
-    margin: center;
+    margin: 5% auto;
+    max-width: auto;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 10%;
 }
 
 h1 {
     text-align: center;
-    margin: 10px;
+    margin: 15px;
     margin-left: 1.5rem;
     color: #000000;
-    font-size: 35px;
+    font-size: 3vw;
     text-transform: uppercase;
     font-family: Georgia, serif;
     font-stretch: expanded;
+    font-style: normal;
 }
 
 h2 {
     margin-top: 0px;
     margin-bottom: 40px;
-    margin-left: 3.5rem;
+    margin-left: 3rem;
     text-align: center;
     font-style: Arial;
     font-size: 8rem;
@@ -48,48 +53,76 @@ h2 {
         -16px 16px #379711,
         -20px 20px #379711,
         -24px 24px #ECD407,
-        -28px 28px #ECD407     
+        -28px 28px #ECD407
 }
 
-
 .sr-only {
-    width: 65%;
+    max-width: 400px;
+    width: 800%;
+    line-height: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: -1.5em 0em;
+    margin-top: 2em;
     text-align: left;
-    margin-top: -10%;
 }
 
 #username,
 #inputEmail,
 #inputPassword,
 #inputPassword2 {
-    width: 65%;
-    padding: 14px 10px;
-    margin: -65px 0px;
     display: inline-flex;
-    border: 2px solid #ccc;
-    box-sizing: border-box;
-    margin-top: -25%;
+    max-width: 100%;
+    width: 100%;
+    line-height: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 2em 0em;
+    margin-bottom: auto;
+    border-radius: 5px;
+    border: 2px solid #f2f2f2;
+    padding-left: 10px;
 }
 
 button:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 button[type=submit] {
     margin: 0 auto;
-    display: block;
-    height: 65%;
-    font-size: 18px;
-    color: #ffffff;
-    border: 2px solid #ccc;
-    background: #c68a12;
-    border-radius: 0px;
+    height: 50px;
+    width: 150px;
+    margin-top: 3.5rem;
+    background: #fff;
+    border: 3px solid #379711;
+    border-radius: 20px;
+    color: rgb(74, 84, 94);
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    text-transform: unset;
-    width: 40%;
-    margin-left: 25%;
-    margin-right: 25%;
+}
 
+/*Media Querie*/
+@media only screen and (min-width : 150px) and (max-width : 530px) {
+
+    .form,
+    .sr-only,
+    .h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    .signup,
+    .form,
+    .no-access,
+    .sr-only,
+    #username,
+    #inputEmail,
+    #inputPassword,
+    #inputPassword2 {
+        margin: 10px 0;
+    }
+
+    button[type=login],
+    .form {
+        margin-bottom: 10px;
+    }
 }
