@@ -1,6 +1,6 @@
 html
   head
-  link(rel='stylesheet', href='/stylesheets/login.css')
+  link(rel='stylesheet', href='/stylesheets/login.css', meta name="viewport", content="initial-scale=1")
   body
     block content
   div.text-center
@@ -9,7 +9,6 @@ html
         p.text-danger #{errors}
 
     h2(class="h3 mb-3 font-weight-normal") UNO!
-
   form(class="form-signin" method="POST" action="/login")
     h1(class="h3 mb-3 font-weight-normal") Log in to play
 
@@ -20,4 +19,6 @@ html
     input(type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required)
 
     button(class="btn btn-lg btn-primary btn-block" type="login") Log In
-    a(class="btn btn-lg btn-primary btn-block" href="register" input type="signup") Sign Up
+
+    a(href="register" class="btn btn-lg btn-primary btn-block" text-decoration="none")
+      button(type="button" class="signup" text-decoration="none") Sign Up
