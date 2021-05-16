@@ -11,11 +11,11 @@ body {
 .play {
     text-align: center;
     display: inline-block;
-    height: 5rem;
-    width: 13rem;
+    height: 4rem;
+    width: 12rem;
     position: relative;
-    margin-left: 95rem;
-    margin-top: 45rem;
+    margin-left: 68rem;
+    margin-top: 35rem;
     font-family: 'Press Start 2p';
     font-size: 25pt;
     cursor: pointer;

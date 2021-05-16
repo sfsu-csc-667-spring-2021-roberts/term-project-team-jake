@@ -4,6 +4,7 @@ body {
 }
 
 form {
+    position: static;
     margin-top: 10rem;
     width: 30%;
     height: 70%;
@@ -23,12 +24,15 @@ form {
     padding-bottom: 10%;
 }
 
+p.text-danger {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     margin: 15px;
-    margin-left: 1.5rem;
     color: #000000;
-    font-size: 3vw;
+    font-size: 2.5vmax;
     text-transform: uppercase;
     font-family: Georgia, serif;
     font-stretch: expanded;
@@ -37,32 +41,53 @@ h1 {
 
 h2 {
     margin-top: 0rem;
-    margin-bottom: -3rem;
+    margin-bottom: -1.5rem;
     margin-left: -1.5rem;
     letter-spacing: 1rem;
-    font-size: 11.5rem;
+    font-size: 8rem;
     text-align: center;
     color: #fcedd8;
     font-family: 'Niconne', 'ubuntu';
-    text-shadow: 5px 5px 0px #D72600,
+    text-shadow:
+        .5px .5px 0px #fcedd8,
+        5px 5px 0px #D72600,
+        7.5px 7.5px 0px #D72600,
         10px 10px 0px #efa032,
+        12.5px 12.5px 0px #efa032,
         15px 15px 0px #379711,
+        17.5px 17.5px 0px #379711,
         20px 20px 0px #017e7f,
+        22.5px 22.5px 0px #017e7f,
         25px 25px 0px #052939,
+        27.5px 27.5px 0px #052939,
         30px 30px 0px #c11a2b,
+        32.5px 32.5px 0px #c11a2b,
         35px 35px 0px #c11a2b,
-        40px 40px 0px #c11a2b,
-        45px 45px 0px #c11a2b;
+        37.5px 37.5px 0px #c11a2b,
+        40px 40px 0px #c11a2b
+}
+
+@media screen and (max-device-width : 400px) {
+    h2 {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (min-device-width : 600px) {
+    h2 {
+        font-size: 7rem;
+    }
 }
 
 .sr-only {
-    max-width: 400px;
-    width: 800%;
+    max-width: 100%;
+    width: 100%;
     line-height: 2em;
     font-family: 'Ubuntu', sans-serif;
     margin: -1.5em 0em;
     margin-top: 2em;
     text-align: left;
+    font-size: .5rem;
 }
 
 #username,
@@ -79,6 +104,7 @@ h2 {
     border-radius: 5px;
     border: 2px solid #f2f2f2;
     padding-left: 10px;
+    font-size: .5rem;
 }
 
 button:hover {
@@ -104,7 +130,8 @@ button[type=submit] {
 
     .form,
     .sr-only,
-    .h1 {
+    .h1,
+    button[type=submit] {
         text-align: center;
         margin: 0;
     }
@@ -116,7 +143,8 @@ button[type=submit] {
     #username,
     #inputEmail,
     #inputPassword,
-    #inputPassword2 {
+    #inputPassword2,
+    button[type=submit] {
         margin: 10px 0;
     }
 
