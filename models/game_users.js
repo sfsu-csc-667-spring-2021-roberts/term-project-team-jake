@@ -4,7 +4,8 @@ module.exports = function(sequelize, DataTypes) {
     game_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
+      references: {model: 'games', key: 'id'}
     },
     order: {
       type: DataTypes.INTEGER,
@@ -12,7 +13,8 @@ module.exports = function(sequelize, DataTypes) {
     },
     players: {
       type: DataTypes.INTEGER,
-      allowNull: true
+      allowNull: true,
+      references: {model: 'users', key: 'id'}
     }
   }, {
     sequelize,

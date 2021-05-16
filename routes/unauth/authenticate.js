@@ -1,14 +1,25 @@
 var express = require("express");
 var router = express.Router();
 const bcrypt = require("bcrypt");
-const Users = require('../db').Users;
-const passport = require('../authorization/authorization');
+const Users = require('../../db').Users;
+const passport = require('../../authorization/authorization');
+const {isAuth} = require('../../authorization/isAuth');
 
-router.get("/", function (request, response, next) {
-    response.render("register.pug");
-  });
 
-router.post("/", (request, response, next) => {
+router.get('/logout', isAuth, (request, response) => {
+    request.logout();
+    response.redirect('/');
+});
+
+router.post("/login",
+    passport.authenticate("local", {
+      successRedirect: "/lobby",
+      failureRedirect: "/login",
+      failureFlash: true,
+    })
+);
+
+router.post("/register", (request, response, next) => {
     const { username, email, password, password2 } = request.body;
     const errors = [];
 
