@@ -1,0 +1,30 @@
+html
+  head
+  link(rel='stylesheet', href='/stylesheets/lobby.css', meta name="viewport", content="initial-scale=1")
+  <script defer src="routes/login.js"></script>
+  body
+  block content
+
+  h2(class="h3 mb-3 font-weight-normal") UNO!
+
+.container2
+  .top
+    h5 Party
+    .row
+      h3
+        #{friendname} (friends name)
+      p #{mutualfriends} mutual friends 
+
+      h3
+        #{friendname} (friends name)
+      p #{mutualfriends} mutual friends 
+
+.section
+  button(class="findgame" type="login") Find Game
+    a(href="register" class="btn btn-lg btn-primary btn-block" text-decoration="none")
+  button(type="button" class="settings" text-decoration="none") Start Game
+  button(type="button" class="logout" text-decoration="none") Log Out
+
+  h1
+    #{username} (username)
+    

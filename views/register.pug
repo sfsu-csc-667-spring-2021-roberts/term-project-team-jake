@@ -1,6 +1,7 @@
 html
   head
   link(rel='stylesheet', href='/stylesheets/register.css')
+
   body
 block content
   div.text-center
@@ -8,21 +9,21 @@ block content
       if errors
         p.text-danger #{errors}
 
-      h2(class="h3 mb-3 font-weight-normal") UNO!
+    h2() UNO!
 
-    form(class="form-signin" method="POST" action="/register")
-      h1(class="h3 mb-3 font-weight-normal") Sign up to play
+  form(class="form-signin" method="POST" action="/register")
+    h1(class="h3 mb-3 font-weight-normal") Sign up to play
 
-      label( for="username" class="sr-only") Username
-      input(type="text" name="username" id="username" class="form-control" placeholder="Username" )
+    label( for="username" class="sr-only") Username
+    input(type="text" name="username" id="username" class="form-control" placeholder="Username" )
 
-      label( for="inputEmail" class="sr-only") Email address
-      input(type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" )
+    label( for="inputEmail" class="sr-only") Email address
+    input(type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" )
 
-      label(for="inputPassword" class="sr-only") Password
-      input(type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" )
+    label(for="inputPassword" class="sr-only") Password
+    input(type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" )
 
-      label(for="inputPassword2" class="sr-only") Confirm Password
-      input(type="password" name="password2" id="inputPassword2" class="form-control" placeholder="Confirm Password" )
+    label(for="inputPassword2" class="sr-only") Confirm Password
+    input(type="password" name="password2" id="inputPassword2" class="form-control" placeholder="Confirm Password" )
 
-      button(class="btn btn-lg btn-primary btn-block" type="submit") Create Account
+    button(class="btn btn-lg btn-primary btn-block" type="submit") Create Account

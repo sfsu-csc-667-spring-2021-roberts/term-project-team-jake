@@ -1,6 +1,6 @@
 html
   head
-  link(rel='stylesheet', href='/stylesheets/login.css', meta name="viewport", content="initial-scale=1")
+  link(rel='stylesheet', href='/stylesheets/login.css', meta name="viewport", content="width=device-width, initial-scale=1.0")
   body
     block content
   div.text-center
@@ -9,6 +9,7 @@ html
         p.text-danger #{errors}
 
     h2(class="h3 mb-3 font-weight-normal") UNO!
+
   form(class="form-signin" method="POST" action="/login")
     h1(class="h3 mb-3 font-weight-normal") Log in to play
 
