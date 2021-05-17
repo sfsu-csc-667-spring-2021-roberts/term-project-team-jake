@@ -4,11 +4,13 @@ body {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: Arial;
   perspective: 100em;
 }
-/* CARDS STYLES */
+/* CARDS STYLE */
+
 .card {
   display: inline-block;
   background-color: #fff;
