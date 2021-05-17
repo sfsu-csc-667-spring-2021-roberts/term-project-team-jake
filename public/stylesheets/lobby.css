@@ -130,7 +130,7 @@ h1 {
 
 
 .logout,
-.startgame,
+.creategame,
 .findgame {
     text-decoration: none;
     position: relative;
@@ -157,7 +157,7 @@ h1 {
 a {text-decoration: none;}
 
 .logout:hover,
-.startgame:hover,
+.creategame:hover,
 .findgame:hover {
     top: 1px;
     box-shadow: 0 2.5px 0 #b76113, 0 3px 1px 1px rgba(0, 0, 0, .3), 0 4px 0 4px #75421f, 0 5px 0 4px #8a542b, 0 4px 0 4px #593116, 0 8px 1px 4.5px rgba(0, 0, 0, .3);
