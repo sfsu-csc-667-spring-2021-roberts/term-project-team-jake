@@ -1,0 +1,24 @@
+html
+  head
+  link(rel='stylesheet', href='/stylesheets/creategame.css')
+  body
+
+block content 
+
+h2(class="h3 mb-3 font-weight-normal") UNO!
+    h1 #{username}, create a room ⤵
+
+    .row
+        .games-list.col
+
+    form.row(method="post" enctype="application/x-www-form-urlencoded" action="/game/creategame")   
+        div.col-md-4
+            input.form-control#game-name(type="text" name="gameName" placeholder="Game name" class="gamename")
+        div.col-md-4
+            input.form-control#num-of-players(type="number" name="numOfPlayers" placeholder="# of players" class="numOfPlayers")
+        div.col-md-4
+            button#create-game.btn.btn-primary(type="submit" value="Create") Create Game
+
+        a(href="/lobby" class="btn btn-lg btn-primary btn-block" text-decoration="none")
+            button(type="button" class="lobby" text-decoration="none") Back to Lobby ↩
+
