@@ -1,0 +1,15 @@
+extends layout 
+
+block content 
+    h1 Create a Game 
+
+    .row
+        .games-list.col
+
+            form.row(method="post" enctype="application/x-www-form-urlencoded" action="/game/creategame")
+                div.col-md-4
+                    input.form-control#game-name(type="text" name="gameName" placeholder="Game name")
+                div.col-md-4
+                    input.form-control#num-of-players(type="number" name="numOfPlayers" placeholder="# of players")
+                div.col-md-4
+                    button#create-game.btn.btn-primary(type="submit" value="Create") Create Game

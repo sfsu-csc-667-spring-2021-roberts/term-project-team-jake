@@ -1,7 +1,7 @@
 html
   head
   link(rel='stylesheet', href='/stylesheets/lobby.css', meta name="viewport", content="initial-scale=1")
-  <script defer src="routes/login.js"></script>
+  //<script defer src="routes/login.js"></script>
   body
   block content
 
@@ -10,11 +10,11 @@ html
    h1 #{username}
 
 .section
-  a(href="/lobby/findgame" class="btn btn-lg btn-primary btn-block" text-decoration="none")
+  a(href="/game/gamerooms" class="btn btn-lg btn-primary btn-block" text-decoration="none")
     button(class="findgame" type="button") Find Game
 
-  a(href="/lobby/startgame" class="btn btn-lg btn-primary btn-block" text-decoration="none")
-    button(type="button" class="startgame" text-decoration="none") Create Game
+  a(href="/game/creategame" class="btn btn-lg btn-primary btn-block" text-decoration="none")
+    button(type="button" class="creategame" text-decoration="none") Create Game
 
 
   a(href='/lobby/logout' text-decoration="none")

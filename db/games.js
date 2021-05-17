@@ -1,20 +1,18 @@
 const db = require('./connection');
 
-const create = (name, numberOfPlayers, userId) =>
-    db
-      .one('INSERT INTO games (game_name, num_of_players) VALUES ($1, $2) RETURNING id', [name, numberOfPlayers])
-      .then(({ id }) => addPlayer(id, userId));
+const allGames = () => {
+    return db.one('SELECT game_Name, num_of_players FROM games');
+}
+const create = (name, numOfPlayers, action) => {
+    return db.one('INSERT INTO games (game_Name, num_of_players, action) VALUES ($1, $2, $3)', [name, numOfPlayers, action]);
+}
 
-const addPlayer = (gameId, userId) =>
-    db.one('INSERT INTO game_users VALUES ($1, $2) RETURNING game_id AS id', [gameId, userId]);
+const addPlayer = (gameId, userId) => {
+    return db.one('INSERT INTO game_users(game_id, players) VALUES ($1, $2)', [gameId, userId]);
+}
 
-const findById = (id) =>
-    Promise.all([
-        db.one('SELECT * FROM games WHERE id=$1', [id]),
-        db.any(
-            'SELECT users.id, users.username, users.email FROM game_users, users WHERE game_users.game_id=$1 AND game_users.players=users.id',
-            [id]
-        ),
-    ]).then(([game, players]) => ({ ...game, players }));
+const findById = (id) => {
+    return db.one('SELECT id, username, email FROM users WHERE id=$1', [id]);
+}
 
-module.exports = { create, addPlayer, findById };
+module.exports = { allGames, create, addPlayer, findById };
