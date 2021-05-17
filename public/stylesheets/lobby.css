@@ -118,18 +118,18 @@ h2 {
 h1 {
     justify-content: center;
     font-size: 1.5em;
-    margin: 20px;
+    width: 20rem;
+    margin: auto;
     margin-top: 5em;
     text-align: center;
     background-color: #ffffff;
     border: 2px #e78700;
-    border-style: dashed dotted;
-    
+    color: #000000;
 }
 
 
 .logout,
-.settings,
+.startgame,
 .findgame {
     position: relative;
     overflow: hidden;
