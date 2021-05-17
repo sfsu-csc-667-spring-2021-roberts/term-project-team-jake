@@ -1,0 +1,23 @@
+html
+  head
+  link(rel='stylesheet', href='/stylesheets/lobby.css', meta name="viewport", content="initial-scale=1")
+  <script defer src="routes/login.js"></script>
+  body
+  block content
+
+  h2(class="h3 mb-3 font-weight-normal") UNO!
+ 
+   h1 Hi, #{username}
+
+.section
+  a(href="/lobby/findgame" class="btn btn-lg btn-primary btn-block" text-decoration="none")
+    button(class="findgame" type="button") Find Game
+
+  a(href="/lobby/startgame" class="btn btn-lg btn-primary btn-block" text-decoration="none")
+    button(type="button" class="startgame" text-decoration="none") Start Game
+
+
+  a(href='/lobby/logout' text-decoration="none")
+    button(type="button" ahref='/lobby/logout' class="logout" text-decoration="none") Log Out
+
+  
