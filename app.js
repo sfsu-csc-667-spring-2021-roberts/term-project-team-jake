@@ -16,6 +16,7 @@ var authRouter = require('./routes/unauth/authenticate');
 var usersRouter = require('./routes/users');
 var testsRouter = require('./routes/tests');
 var lobbyRouter = require('./routes/auth/lobby');
+var gameRouter = require('./routes/auth/game');
 
 var app = express();
 
@@ -46,6 +47,7 @@ app.use('/', indexRouter, authRouter);
 app.use('/users', usersRouter);
 app.use('/test', testsRouter);
 app.use('/lobby', lobbyRouter);
+app.use('/game', gameRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
