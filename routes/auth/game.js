@@ -8,11 +8,8 @@ router.get('/creategame', isAuth, (req, res) => {
 });
 
 router.post('/creategame', isAuth, (req, res) => {
-    let {
-        gameName, numOfPlayers 
-    } = req.body
-    console.log(gameName);
-    console.log(numOfPlayers);
+    const {gameName, numOfPlayers} = req.body
+    Games.create(gameName, numOfPlayers, 1);
     res.redirect('/game/gamerooms');
 });
 
