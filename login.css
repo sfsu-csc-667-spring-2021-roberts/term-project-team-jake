@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+    flex: 1 1 50%;
+    max-width: auto;
+}
+
+body {
+    margin: 0;
+    background-image: url(../images/green_cup.png);
+}
+
+form {
+    margin-top: 10rem;
+    width: 30%;
+    height: 80%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5% auto;
+    max-width: auto;
+    max-height: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 10%;
+    padding-left: 0%;
+}
+
+h1 {
+    text-align: center;
+    margin: 15px;
+    color: #000000;
+    font-size: 2.5vmax;
+    text-transform: uppercase;
+    font-family: Georgia, serif;
+    font-stretch: expanded;
+    font-style: normal;
+}
+
+h2 {
+    margin-top: 0rem;
+    margin-bottom: -1.5rem;
+    margin-left: -1.5rem;
+    letter-spacing: 1rem;
+    font-size: 8rem;
+    text-align: center;
+    color: #fcedd8;
+    font-family: 'Niconne', 'ubuntu';
+    text-shadow:
+        .5px .5px 0px #fcedd8,
+        5px 5px 0px #D72600,
+        7.5px 7.5px 0px #D72600,
+        10px 10px 0px #efa032,
+        12.5px 12.5px 0px #efa032,
+        15px 15px 0px #379711,
+        17.5px 17.5px 0px #379711,
+        20px 20px 0px #017e7f,
+        22.5px 22.5px 0px #017e7f,
+        25px 25px 0px #052939,
+        27.5px 27.5px 0px #052939,
+        30px 30px 0px #c11a2b,
+        32.5px 32.5px 0px #c11a2b,
+        35px 35px 0px #c11a2b,
+        37.5px 37.5px 0px #c11a2b,
+        40px 40px 0px #c11a2b
+}
+
+@media screen and (max-device-width : 400px) {
+    h2, form{
+        font-size: 8rem;
+        
+    }
+}
+
+@media screen and (min-device-width : 600px) {
+    h2, form {
+        font-size: 7rem;
+    }
+}
+
+.sr-only {
+    max-width: 100%;
+    width: 100%;
+    line-height: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: -.9em 0em;
+    margin-top: 2em;
+    text-align: left;
+    font-size: 1rem;
+}
+
+#inputEmail,
+#inputPassword {
+    max-width: 100%;
+    width: 100%;
+    line-height: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 1em 0em;
+    border-radius: 5px;
+    border: 2px solid #f2f2f2;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: .6;
+}
+
+button[type=login] {
+    position: relative;
+    top: 3.5rem;
+    display: block;
+    height: 50px;
+    width: 150px;
+    background: #fff;
+    border: 3px solid #379711;
+    border-radius: 20px;
+    color: rgb(74, 84, 94);
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.signup:hover {
+    opacity: .6;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+.signup {
+    position: relative;
+    top: 3.5rem;
+    display: block;
+    height: 50px;
+    width: 150px;
+    background: #fff;
+    border: 3px solid #ECD407;
+    border-radius: 20px;
+    color: rgb(74, 84, 94);
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/*Media Querie*/
+@media only screen and (min-width : 150px) and (max-width : 530px) {
+
+    .form,
+    .sr-only {
+        text-align: center;
+        margin: 0;
+    }
+
+    .signup,
+    .form,
+    .no-access,
+    .sr-only {
+        margin: 10px 0;
+    }
+
+    button[type=login],
+    .form {
+        margin-bottom: 10px;
+    }
+}
