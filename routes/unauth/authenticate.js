@@ -6,10 +6,10 @@ const passport = require('../../authorization/authorization');
 const {isAuth} = require('../../authorization/isAuth');
 
 
-router.get('/logout', isAuth, (request, response) => {
+/*router.get('/logout', isAuth, (request, response) => {
     request.logout();
     response.redirect('/');
-});
+});*/
 
 router.post("/login",
     passport.authenticate("local", {

@@ -3,12 +3,8 @@ var router = express.Router();
 const {notAuth} = require('../../authorization/isAuth');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  if(req.user) {
-    res.redirect('/lobby');
-  } else {
-    res.render('index.pug');
-  }
+router.get('/', notAuth, function(req, res, next) {
+  res.render('index.pug');
 });
 
 router.get('/login', notAuth, function(req, res, next) {

@@ -1,0 +1,9 @@
+extends layout 
+
+block content 
+    h1 Game Rooms
+
+        each room in rooms
+            ul
+                - url = '/game/join/'
+                a(href=url + room.id ) Join #{room.game_Name}

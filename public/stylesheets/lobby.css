@@ -118,19 +118,21 @@ h2 {
 h1 {
     justify-content: center;
     font-size: 1.5em;
-    margin: 20px;
+    width: 25rem;
+    margin: auto;
     margin-top: 5em;
+    background-color: #fcedd8;
     text-align: center;
-    background-color: #ffffff;
-    border: 2px #e78700;
-    border-style: dashed dotted;
-    
+    border-style: solid;
+    border-radius: 20%;
+    color: #225c0b;
 }
 
 
 .logout,
-.settings,
+.creategame,
 .findgame {
+    text-decoration: none;
     position: relative;
     overflow: hidden;
     align-content: center;
@@ -152,9 +154,12 @@ h1 {
     text-shadow: 1px 1px .5px #e78700, -2px 2px 1px #e78700, 2px -2px 1px #e78700, -2px -2px 1px #e78700, 0px 2px 1px #e78700, 0px -2px 1px #e78700, 0px 4px 1px #c96100, 2px 4px 1px #c96100, -2px 4px 1px #c96100;
 }
 
+a {text-decoration: none;}
+
 .logout:hover,
-.settings:hover,
+.creategame:hover,
 .findgame:hover {
     top: 1px;
     box-shadow: 0 2.5px 0 #b76113, 0 3px 1px 1px rgba(0, 0, 0, .3), 0 4px 0 4px #75421f, 0 5px 0 4px #8a542b, 0 4px 0 4px #593116, 0 8px 1px 4.5px rgba(0, 0, 0, .3);
+    text-decoration: none;
 }

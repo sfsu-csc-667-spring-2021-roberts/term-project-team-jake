@@ -13,8 +13,6 @@ const session = require('express-session');
 
 var indexRouter = require('./routes/unauth/index');
 var authRouter = require('./routes/unauth/authenticate');
-var usersRouter = require('./routes/users');
-var testsRouter = require('./routes/tests');
 var lobbyRouter = require('./routes/auth/lobby');
 var gameRouter = require('./routes/auth/game');
 var chatRouter = require('./routes/auth/chat')
@@ -37,7 +35,6 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    //cookie: { secure: true },
   })
 );
 
@@ -45,8 +42,6 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', indexRouter, authRouter);
-app.use('/users', usersRouter);
-app.use('/test', testsRouter);
 app.use('/lobby', lobbyRouter);
 app.use('/game', gameRouter);
 app.use('/chat', chatRouter);
@@ -59,6 +54,7 @@ app.use(function(req, res, next) {
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
+  
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
