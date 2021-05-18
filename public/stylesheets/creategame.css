@@ -1,0 +1,171 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-image: url(../images/green_cup.png);
+    overflow-wrap: normal;
+}
+
+.top {
+    text-align: left;
+}
+
+button[type=submit] {
+    text-decoration: none;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    align-content: center;
+    margin: 30px;
+    cursor: pointer;
+    display: block;
+    height: 3em;
+    width: 13em;
+    font-size: 1.5vmax;
+    cursor: pointer;
+    font-family: 'Carter One', sans-serif;
+    line-height: 1.5em;
+    letter-spacing: .1em;
+    background: repeating-linear-gradient(45deg, #ffc800, #ffc800 5px, #ffc200 5px, #ffc200 10px);
+    color: #fff !important;
+    border-radius: 6px;
+    box-shadow: 0 2px 0 #b76113, 0 2px 1px 1px rgba(0, 0, 0, .3), 0 3px 0 3px #75421f, 0 6px 0 3px #8a542b, 0 3px 0 3px #593116, 0 8px 1px 3.5px rgba(0, 0, 0, .3);
+    border-bottom: 1px solid rgba(205, 102, 0, 0.5);
+    text-shadow: 1px 1px .5px #e78700, -2px 2px 1px #e78700, 2px -2px 1px #e78700, -2px -2px 1px #e78700, 0px 2px 1px #e78700, 0px -2px 1px #e78700, 0px 4px 1px #c96100, 2px 4px 1px #c96100, -2px 4px 1px #c96100;
+}
+
+a {
+    text-decoration: none;
+}
+
+button[type=submit]:hover {
+    top: 1px;
+    box-shadow: 0 2.5px 0 #b76113, 0 3px 1px 1px rgba(0, 0, 0, .3), 0 4px 0 4px #75421f, 0 5px 0 4px #8a542b, 0 4px 0 4px #593116, 0 8px 1px 4.5px rgba(0, 0, 0, .3);
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 0rem;
+    margin-bottom: -1.5rem;
+    margin-left: -1.5rem;
+    letter-spacing: 1rem;
+    font-size: 8rem;
+    text-align: center;
+    color: #fcedd8;
+    font-family: 'Niconne', 'ubuntu';
+    text-shadow:
+        .5px .5px 0px #fcedd8,
+        5px 5px 0px #D72600,
+        7.5px 7.5px 0px #D72600,
+        10px 10px 0px #efa032,
+        12.5px 12.5px 0px #efa032,
+        15px 15px 0px #379711,
+        17.5px 17.5px 0px #379711,
+        20px 20px 0px #017e7f,
+        22.5px 22.5px 0px #017e7f,
+        25px 25px 0px #052939,
+        27.5px 27.5px 0px #052939,
+        30px 30px 0px #c11a2b,
+        32.5px 32.5px 0px #c11a2b,
+        35px 35px 0px #c11a2b,
+        37.5px 37.5px 0px #c11a2b,
+        40px 40px 0px #c11a2b
+}
+
+form {
+    margin-top: 15rem;
+    width: 50%;
+    height: 60%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px 2px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 5% auto;
+    max-width: auto;
+    max-height: 100%;
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 10%;
+    padding-left: 0%;
+}
+
+.gamename,
+.numOfPlayers {
+    max-width: 100%;
+    width: 100%;
+    line-height: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0em 0em;
+    border-radius: 5px;
+    border: 2px solid #c9c8c8;
+    padding-left: 10px;
+    font-size: 1rem;
+    margin-top: 2.5rem;
+}
+
+#gamename,
+#numOfPlayers {
+    max-width: 100%;
+    width: 100%;
+    line-height: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0em 0em;
+    border-radius: 5px;
+    border: 2px solid #f2f2f2;
+    padding-left: 10px;
+    font-size: 1rem;
+}
+
+.lobby {
+    position: relative;
+    top: -38rem;
+    left: -34rem;
+    display: block;
+    height: 30px;
+    width: 200px;
+    background: #fff;
+    border: 3px solid #379711;
+    border-radius: 20px;
+    color: rgb(74, 84, 94);
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 auto;
+    font-size: .9rem;
+    font-weight: 900;
+}
+
+.lobby:hover {
+    opacity: .6;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+h1 {
+    justify-content: center;
+    font-size: 1.5em;
+    width: 35rem;
+    height: 2.3rem;
+    margin: auto;
+    margin-top: 2.5em;
+    background-color: #fcedd8;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20%;
+    color: #225c0b;
+}
+

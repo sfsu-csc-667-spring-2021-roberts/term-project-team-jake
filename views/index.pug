@@ -1,5 +1,10 @@
-extends layout
-
+html
+  head
+  link(rel='stylesheet', href='/stylesheets/index.css')
+  body
 block content
   h1= title
-  p Welcome to #{title}
+  #{title}
+
+  a(href="login")
+    button(type="button" class="play") PLAY

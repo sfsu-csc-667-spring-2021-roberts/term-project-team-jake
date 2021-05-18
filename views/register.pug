@@ -1,24 +1,32 @@
-extends layout
+html
+  head
+  link(rel='stylesheet', href='/stylesheets/register.css')
 
+  body
 block content
-    div.text-center
-        #error
-          if errors
-            p.text-danger #{errors}
+  div.text-center
+    #error
+      if errors
+        p.text-danger #{errors}
 
-        form(class="form-signin" method="POST" action="/register")
-            h1(class="h3 mb-3 font-weight-normal") Please sign up to play
+    h2() UNO!
 
-            label( for="username" class="sr-only") Username
-            input(type="text" name="username" id="username" class="form-control" placeholder="Username" )
+  form(class="form-signin" method="POST" action="/register")
+    h1(class="h3 mb-3 font-weight-normal") Sign up to play
 
-            label( for="inputEmail" class="sr-only") Email address
-            input(type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" )
+    label( for="username" class="sr-only") Username
+    input(type="text" name="username" id="username" class="form-control" placeholder="Username" )
 
-            label(for="inputPassword" class="sr-only") Password
-            input(type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" )
+    label( for="inputEmail" class="sr-only") Email address
+    input(type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" )
 
-            label(for="inputPassword2" class="sr-only") Confirm Password
-            input(type="password" name="password2" id="inputPassword2" class="form-control" placeholder="Confirm Password" )
+    label(for="inputPassword" class="sr-only") Password
+    input(type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" )
 
-            button(class="btn btn-lg btn-primary btn-block" type="submit") Register
+    label(for="inputPassword2" class="sr-only") Confirm Password
+    input(type="password" name="password2" id="inputPassword2" class="form-control" placeholder="Confirm Password" )
+
+    button(class="btn btn-lg btn-primary btn-block" type="submit") Create Account
+
+    a(href="login" class="btn btn-lg btn-primary btn-block" text-decoration="none")
+      button(type="button" text-decoration="none") Log In
