@@ -1,9 +1,17 @@
-extends layout 
+html
+  head
+  link(rel='stylesheet', href='/stylesheets/gamerooms.css')
+  body
 
 block content 
-    h1 Game Rooms
-
+h2(class="h3 mb-3 font-weight-normal") UNO!
+    h1 join a room ⤵
+    form
         each room in rooms
             ul
                 - url = '/game/join/'
                 a(href=url + room.id ) Join #{room.game_Name}
+
+a(href="/lobby" class="btn btn-lg btn-primary btn-block" text-decoration="none")
+            button(type="button" class="lobby" text-decoration="none") Back to Lobby ↩
+
