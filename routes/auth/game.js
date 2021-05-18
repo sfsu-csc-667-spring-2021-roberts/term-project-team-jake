@@ -13,8 +13,15 @@ router.post('/creategame', isAuth, (req, res) => {
     res.redirect('/game/gamerooms');
 });
 
-router.get('/gamerooms', isAuth, (req, res) => {
-    res.render('gamerooms.pug', { username: req.user.username });
+router.get('/gamerooms', async (req, res) => {
+    const rooms = await Games.allGames();
+    console.log(rooms);
+    res.render('gamerooms.pug', {rooms});
 });
+
+router.get('/join/:id', (req, res) => {
+    console.log('joining game '+ req.params.id);
+    res.send({status: 'Joining...'});
+})
 
 module.exports = router;

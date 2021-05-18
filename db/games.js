@@ -1,7 +1,7 @@
 const db = require('./connection');
 
-const allGames = () => {
-    return db.one('SELECT "game_Name", num_of_players FROM games');
+const allGames = async () => {
+    return await db.any('SELECT * FROM games');
 }
 const create = (name, numOfPlayers, action) => {
     return db.one('INSERT INTO games ("game_Name", num_of_players, action) VALUES ($1, $2, $3) RETURNING id', [name, numOfPlayers, action]);
