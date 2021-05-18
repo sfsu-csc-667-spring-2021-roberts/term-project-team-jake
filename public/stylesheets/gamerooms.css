@@ -14,38 +14,6 @@ body {
     text-align: left;
 }
 
-button[type=submit] {
-    text-decoration: none;
-    margin-top: 1.5rem;
-    overflow: hidden;
-    align-content: center;
-    margin: 30px;
-    cursor: pointer;
-    display: block;
-    height: 3em;
-    width: 13em;
-    font-size: 1.5vmax;
-    cursor: pointer;
-    font-family: 'Carter One', sans-serif;
-    line-height: 1.5em;
-    letter-spacing: .1em;
-    background: repeating-linear-gradient(45deg, #ffc800, #ffc800 5px, #ffc200 5px, #ffc200 10px);
-    color: #fff !important;
-    border-radius: 6px;
-    box-shadow: 0 2px 0 #b76113, 0 2px 1px 1px rgba(0, 0, 0, .3), 0 3px 0 3px #75421f, 0 6px 0 3px #8a542b, 0 3px 0 3px #593116, 0 8px 1px 3.5px rgba(0, 0, 0, .3);
-    border-bottom: 1px solid rgba(205, 102, 0, 0.5);
-    text-shadow: 1px 1px .5px #e78700, -2px 2px 1px #e78700, 2px -2px 1px #e78700, -2px -2px 1px #e78700, 0px 2px 1px #e78700, 0px -2px 1px #e78700, 0px 4px 1px #c96100, 2px 4px 1px #c96100, -2px 4px 1px #c96100;
-}
-
-a {
-    text-decoration: none;
-}
-
-button[type=submit]:hover {
-    top: 1px;
-    box-shadow: 0 2.5px 0 #b76113, 0 3px 1px 1px rgba(0, 0, 0, .3), 0 4px 0 4px #75421f, 0 5px 0 4px #8a542b, 0 4px 0 4px #593116, 0 8px 1px 4.5px rgba(0, 0, 0, .3);
-    text-decoration: none;
-}
 
 h2 {
     margin-top: 0rem;
@@ -92,13 +60,25 @@ form {
     max-width: auto;
     max-height: 100%;
     box-sizing: border-box;
-    padding-top: 15px;
-    padding-bottom: 10%;
     padding-left: 0%;
+    font-size: 1rem;
 }
 
-.gamename,
-.numOfPlayers {
+h1 {
+    justify-content: center;
+    font-size: 1.3em;
+    width: 35rem;
+    height: 2.3rem;
+    margin: auto;
+    margin-top: 2.5em;
+    background-color: #fcedd8;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20%;
+    color: #225c0b;
+}
+
+ul {
     max-width: 100%;
     width: 100%;
     line-height: 3em;
@@ -106,28 +86,14 @@ form {
     margin: 0em 0em;
     border-radius: 5px;
     border: 2px solid #c9c8c8;
-    padding-left: 10px;
-    font-size: 1rem;
-    margin-top: 2.5rem;
-}
-
-#gamename,
-#numOfPlayers {
-    max-width: 100%;
-    width: 100%;
-    line-height: 3em;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0em 0em;
-    border-radius: 5px;
-    border: 2px solid #f2f2f2;
-    padding-left: 10px;
+    padding-left: 0px;
     font-size: 1rem;
 }
 
 .lobby {
     position: relative;
-    top: -38rem;
-    left: -34rem;
+    top: -50.2rem;
+    left: -33.2rem;
     display: block;
     height: 30px;
     width: 200px;
@@ -154,18 +120,3 @@ a:link,
 a:active {
     text-decoration: none;
 }
-
-h1 {
-    justify-content: center;
-    font-size: 1.5em;
-    width: 35rem;
-    height: 2.3rem;
-    margin: auto;
-    margin-top: 2.5em;
-    background-color: #fcedd8;
-    text-align: center;
-    border-style: solid;
-    border-radius: 20%;
-    color: #225c0b;
-}
-
