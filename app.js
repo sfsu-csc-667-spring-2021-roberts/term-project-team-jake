@@ -48,8 +48,8 @@ app.use('/', indexRouter, authRouter);
 app.use('/users', usersRouter);
 app.use('/test', testsRouter);
 app.use('/lobby', lobbyRouter);
-app.use('/game', isAuth, gameRouter);
-app.use('/chat', isAuth, chatRouter);
+app.use('/game', gameRouter);
+app.use('/chat', chatRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
